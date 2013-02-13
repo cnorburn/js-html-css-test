@@ -228,13 +228,13 @@
 			*/
 			var by= function(property,type) {
 			    return function (a,b) {
-					if (type=='date'){
-						a = new Date(a.dob);
- 						b = new Date(b.dob);
+				if (type=='date'){
+					a = new Date(a.dob);
+ 					b = new Date(b.dob);
 			        	return  (a < b ) ? -1 : (a > b) ? 1 : 0;
-					}else{
+				}else{
 			        	return (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-					}
+				}
 			}
 
 			/*
@@ -259,7 +259,7 @@
 				//load the table into an object array
 				var tbl = document.getElementById("tbl");
 				for (var i = 1, row; row = tbl.rows[i]; i++) {
-					//for readibility i've used string literal for the key here
+					//for readibility i've used the string literal for the key here
 					//i could have just used the id of the <th>
 					var rows={
 						"fname":row.cells[0].innerHTML,
