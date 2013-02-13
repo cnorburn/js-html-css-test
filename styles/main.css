@@ -69,6 +69,7 @@
 
 #content ol.list-1 a .grad-1{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2F2F2), to(#E0E0E0));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#F2F2F2, #E0E0E0);
 	border-top:1px solid #e1e1e1;
 	border-left:1px solid #e1e1e1;
 	border-right:1px solid #e1e1e1;
@@ -76,6 +77,7 @@
 
 #content ol.list-1 a .grad-2{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cdcdcd), to(#EaEaEa));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#cdcdcd, #EaEaEa);
 	border-bottom:1px solid #cdcdcd;
 	border-left:1px solid #cdcdcd;
 	border-right:1px solid #cdcdcd;
@@ -83,23 +85,28 @@
 
 #content ol.list-1 a:hover .grad-1{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5eded), to(#e3dcdc));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#f5eded, #e3dcdc);
 }
 
 #content ol.list-1 a:hover .grad-2{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d0c9c9), to(#ede5e5));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#d0c9c9, #ede5e5);
 }
 
 #content ol.list-1 a:active .grad-1{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5edf5), to(#e3dce3));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#f5edf5, #e3dce3);
 }
 
 #content ol.list-1 a:active .grad-2{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d0c9d0), to(#ede5ed));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#d0c9d0, #ede5ed);
 }
 
 
 #content ol.list-2 a .grad-1{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ededf5), to(#dcdce3));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#ededf5, #dcdce3);
 	border-top:1px solid #c1c1e1;
 	border-left:1px solid #c1c1e1;
 	border-right:1px solid #c1c1e1;
@@ -107,6 +114,7 @@
 
 #content ol.list-2 a .grad-2{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c9c9d0), to(#e5e5ed));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#c9c9d0, #e5e5ed);
 	border-bottom:1px solid #bdbded;
 	border-left:1px solid #bdbded;
 	border-right:1px solid #bdbded;
@@ -114,14 +122,17 @@
 
 #content ol.list-2 a:hover .grad-1{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2ff), to(#e0e0ec));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#f2f2ff, #e0e0ec);
 }
 
 #content ol.list-2 a:hover .grad-2{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cdcdd8), to(#eaeaf6));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#cdcdd8, #eaeaf6);
 }
 
 #content ol.list-2 a:active .grad-1{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edf5f5), to(#dce3e3));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#edf5f5, #dce3e3);
 	border-top:1px solid #c1e1e1;
 	border-left:1px solid #c1e1e1;
 	border-right:1px solid #c1e1e1;
@@ -129,6 +140,7 @@
 
 #content ol.list-2 a:active .grad-2{
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c9d0d0), to(#e5eded));
+	background-image: -moz-linear-gradient(0% 0% 90deg,#d0c9d0, #ede5ed);
 	border-bottom:1px solid #bdeded;
 	border-left:1px solid #bdeded;
 	border-right:1px solid #bdeded;
