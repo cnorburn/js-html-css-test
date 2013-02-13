@@ -219,33 +219,39 @@
 </table>
 		
 		<script type="text/javascript">
-				var table=[];
+			var table=[];
 
-				//TODO - lots more error checking
+			//TODO - lots more error checking
 
-				var by= function(property,type) {
-				    return function (a,b) {
-						if (type=='date'){
-							a = new Date(a.dob);
-	 						b = new Date(b.dob);
-				        	return  (a < b ) ? -1 : (a > b) ? 1 : 0;
-						}else{
-				        	return (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-						}
-				}
-
-				var renderTable=function(array){
-					var len=table.length;
-					var s='';
-					for(var i=0;i<=len;i++){
-						if (table[i] && table[i].hasOwnProperty('fname') ){
-							s+='<tr><td>' + table[i].fname + '</td><td>' + table[i].sname + 
-								'</td><td>' + table[i].dob + '</td><td>' + table[i].city + 
-								'</td><td>' + table[i].pcode + '</td></tr>';
-						}
+			/*
+				Function to sort the object array by the suplied property
+			*/
+			var by= function(property,type) {
+			    return function (a,b) {
+					if (type=='date'){
+						a = new Date(a.dob);
+ 						b = new Date(b.dob);
+			        	return  (a < b ) ? -1 : (a > b) ? 1 : 0;
+					}else{
+			        	return (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
 					}
-					document.getElementById("tbody").innerHTML=s;
+			}
+
+			/*
+				Function to render the sorted object array to the table
+			*/
+			var renderTable=function(array){
+				var len=table.length;
+				var s='';
+				for(var i=0;i<=len;i++){
+					if (table[i] && table[i].hasOwnProperty('fname') ){
+						s+='<tr><td>' + table[i].fname + '</td><td>' + table[i].sname + 
+							'</td><td>' + table[i].dob + '</td><td>' + table[i].city + 
+							'</td><td>' + table[i].pcode + '</td></tr>';
+					}
 				}
+				document.getElementById("tbody").innerHTML=s;
+			}
 
 
 			addEventListener( 'DOMContentLoaded', function() {
@@ -253,6 +259,8 @@
 				//load the table into an object array
 				var tbl = document.getElementById("tbl");
 				for (var i = 1, row; row = tbl.rows[i]; i++) {
+					//for readibility i've used string literal for the key here
+					//i could have just used the id of the <th>
 					var rows={
 						"fname":row.cells[0].innerHTML,
 						"sname":row.cells[1].innerHTML,
